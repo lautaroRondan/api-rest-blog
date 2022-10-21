@@ -25,20 +25,20 @@ const rutas_articulo = require("./rutas/articulo");
 app.use("/api", rutas_articulo);
 
 //rutas de pruebas hardcodeadas
-app.get("/probando", (req, res)=>{
+// app.get("/probando", (req, res)=>{
 
-    console.log("se ha ejecutado el endpoint probando");
+//     console.log("se ha ejecutado el endpoint probando");
 
-    return res.status(200).json([{
-        nombre:'lauti',
-        apellido: 'rondan'
-    },
-    {
-        nombre:'lauti',
-        apellido: 'rondan'
-    }
-]);
-});
+//     return res.status(200).json([{
+//         nombre:'lauti',
+//         apellido: 'rondan'
+//     },
+//     {
+//         nombre:'lauti',
+//         apellido: 'rondan'
+//     }
+// ]);
+// });
 
 // crear servidor y escuchar peticiones
 app.listen(puerto, ()=>{
