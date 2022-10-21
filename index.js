@@ -10,7 +10,7 @@ conexion();
 
 // crear servidor node
 const app = express();
-const puerto = 3000;
+const puerto =  process.env.PORT ||3000;
 
 // configurar cors
 app.use(cors());
@@ -44,3 +44,5 @@ app.get("/probando", (req, res)=>{
 app.listen(puerto, ()=>{
     console.log("servidor corriendo en el puerto "+puerto);
 });
+
+// mongodb+srv://lauti:<lutyluty8>@api-rest-blog.s47xrmn.mongodb.net/mi_blog
