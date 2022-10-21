@@ -10,7 +10,7 @@ conexion();
 
 // crear servidor node
 const app = express();
-const puerto = 3900;
+const puerto = 3000;
 
 // configurar cors
 app.use(cors());
